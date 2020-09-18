@@ -1,2 +1,107 @@
 # attendance-checker-provider-dummy
 Flask backend which provide dummy data for attendance-checker
+
+## Restful API Examples
+
+/api/all
+----
+
+```json
+         "name":"서예진",
+         "id":"yejinneer",
+         "password":"aaa",
+         "deviceList":[
+            {
+               "device_id":4,
+               "personal_id":2,
+               "mac_addr":"ad:df:3f:32:ff:sd",
+               "device_index":1
+            }
+         ]
+      },
+      {
+         "personal_id":3,
+         "name":"이경하",
+         "id":"nulleekh",
+         "password":"bbb",
+         "deviceList":[
+            {
+               "device_id":3,
+               "personal_id":3,
+               "mac_addr":"df:df:ee:fe:sa:aa",
+               "device_index":1
+            }
+         ]
+      },
+      {
+         "personal_id":4,
+         "name":"진영훈",
+         "id":"hunihuni",
+         "password":"cc",
+         "deviceList":[
+            
+         ]
+      },
+      {
+         "personal_id":5,
+         "name":"정주용",
+         "id":"juyong",
+         "password":"ccdd",
+         "deviceList":[
+            
+         ]
+      }
+   ]
+}
+```
+
+/api/{id}
+----
+
+```json
+{
+   "personal_id":1,
+   "name":"정종민",
+   "id":"alertjjm",
+   "password":"abc1234",
+   "deviceList":[
+      {
+         "device_id":1,
+         "personal_id":1,
+         "mac_addr":"aa:bb:cc:dd:ee:ff",
+         "device_index":1
+      },
+      {
+         "device_id":2,
+         "personal_id":1,
+         "mac_addr":"bb:cc:dd:ee:aa",
+         "device_index":2
+      }
+   ]
+}
+```
+
+/api/{id}/{yyyyMMDD}
+----
+
+```json
+{
+   "count":2,
+   "data":[
+      {
+         "index":1,
+         "personalid":1,
+         "roomid":4,
+         "entertime":"2020-09-17T12:52:05",
+         "exittime":"2020-09-17T20:52:10"
+      },
+      {
+         "index":2,
+         "personalid":1,
+         "roomid":4,
+         "entertime":"2020-09-17T07:52:46",
+         "exittime":"2020-09-17T11:52:53"
+      }
+   ]
+}
+```
