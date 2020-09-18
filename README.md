@@ -7,6 +7,31 @@ Flask backend which provide dummy data for attendance-checker
 ----
 
 ```json
+{
+   "count":5,
+   "data":[
+      {
+         "personal_id":1,
+         "name":"정종민",
+         "id":"alertjjm",
+         "password":"abc1234",
+         "deviceList":[
+            {
+               "device_id":1,
+               "personal_id":1,
+               "mac_addr":"aa:bb:cc:dd:ee:ff",
+               "device_index":1
+            },
+            {
+               "device_id":2,
+               "personal_id":1,
+               "mac_addr":"bb:cc:dd:ee:aa",
+               "device_index":2
+            }
+         ]
+      },
+      {
+         "personal_id":2,
          "name":"서예진",
          "id":"yejinneer",
          "password":"aaa",
