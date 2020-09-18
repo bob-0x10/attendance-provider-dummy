@@ -117,15 +117,15 @@ Flask backend which provide dummy data for attendance-checker
          "index":1,
          "personalid":1,
          "roomid":4,
-         "entertime":"2020-09-17T12:52:05",
-         "exittime":"2020-09-17T20:52:10"
+         "entertime":"38293",
+         "exittime":"32930"
       },
       {
          "index":2,
          "personalid":1,
          "roomid":4,
-         "entertime":"2020-09-17T07:52:46",
-         "exittime":"2020-09-17T11:52:53"
+         "entertime":"59302",
+         "exittime":"70392"
       }
    ]
 }
