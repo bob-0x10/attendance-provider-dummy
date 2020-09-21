@@ -7,7 +7,7 @@ from collections import OrderedDict
 app = Flask(__name__)
 
 # get packet data from request to /upload/packet/data
-@app.route('/api/all')
+@app.route('/api/all', methods=['GET'])
 def api_all():
     # declare a dictionary for response data
     response = OrderedDict(
@@ -88,7 +88,7 @@ def api_all():
                 json.dumps(response,sort_keys=False),
                 mimetype=app.config['JSONIFY_MIMETYPE'])
 
-@app.route('/api/<personal_id>')
+@app.route('/api/<personal_id>', methods=['GET'])
 def api_personal(personal_id):
     # do type casting of data
     try:
@@ -183,7 +183,7 @@ def api_personal(personal_id):
                 json.dumps(response,sort_keys=False),
                 mimetype=app.config['JSONIFY_MIMETYPE'])
 
-@app.route('/api/<personal_id>/<date>')
+@app.route('/api/<personal_id>/<date>', methods=['GET'])
 def api_personal_date(personal_id, date):
     # do type casting of data
     try:
