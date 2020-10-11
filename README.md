@@ -1,4 +1,4 @@
-# attendance-checker-provider-dummy
+# attendance-provider-dummy
 Flask backend which provide dummy data for attendance-checker
 
 ## Restful API Examples
